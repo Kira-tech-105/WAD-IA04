@@ -104,7 +104,7 @@ function App() {
     }
     return (
       <li key={move}>
-        {move == history.length() - 1 ? (
+        {move == history.length - 1 ? (
         <div>{description}</div>
         ) : (
           <button onClick={() => jumpTo(move)}>{description}</button>
