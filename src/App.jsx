@@ -114,11 +114,12 @@ function App() {
     <div className="game">
       <div className="game-board">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+        
+      </div>
+      <div className="game-info">
         <button onClick={() => setAscending(!isAscending)}>
           Sort moves
         </button> 
-      </div>
-      <div className="game-info">
         <ol>{movesList}</ol>
         
       </div>
